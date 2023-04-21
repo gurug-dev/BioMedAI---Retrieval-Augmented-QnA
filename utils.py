@@ -4,13 +4,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 def load_docs(directory):
   documents = []
-
-  pdf_loader = DirectoryLoader(directory, glob="*.pdf")
-  documents.extend(pdf_loader.load())
-
   loader = DirectoryLoader(directory, glob="*.csv", loader_cls=CSVLoader)
   documents.extend(loader.load())
-
   return documents
 
 def split_docs(documents,chunk_size=1000,chunk_overlap=20):
