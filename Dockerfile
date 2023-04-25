@@ -1,4 +1,4 @@
-FROM python:3.9.5
+FROM python:3.9.5-slim
 
 RUN pip install -U pip 
 
@@ -11,7 +11,7 @@ WORKDIR /app
 COPY [ "requirements.txt", "./" ]
 
 RUN pip install -r requirements.txt
-RUn pip install detectron2@git+https://github.com/facebookresearch/detectron2.git@d1e04565d3bec8719335b88be9e9b961bf3ec464
+RUN pip install detectron2@git+https://github.com/facebookresearch/detectron2.git@d1e04565d3bec8719335b88be9e9b961bf3ec464
 
 COPY . .
 
