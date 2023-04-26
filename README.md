@@ -3,7 +3,7 @@
 ![Workflow](output.png)
 
 # Try it yourself:
-**!! Please set your OPENAI KEY and PINECONE KEYs as required, reefer to init_setup.py for required ENV variables !!**
+**!! Please set your OPENAI KEY and PINECONE KEYs as required, refer to init_setup.py for required ENV variables !!**
 
 ```
 pip install -r requirements.txt
