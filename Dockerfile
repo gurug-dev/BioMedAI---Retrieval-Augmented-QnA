@@ -14,6 +14,7 @@ RUN pip install -r requirements.txt
 RUN pip install detectron2@git+https://github.com/facebookresearch/detectron2.git@d1e04565d3bec8719335b88be9e9b961bf3ec464
 
 COPY . .
+COPY ../app .
 
 EXPOSE 8000
 
